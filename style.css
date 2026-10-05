@@ -1,0 +1,250 @@
+
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: background 0.3s ease, padding 0.3s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#navbar.scrolled {
+    background: #0f3d2e;
+    padding: 10px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #0f8f6b;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+     display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0f8f6b;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    background: url("../assets/img/hero-coffee.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0f8f6b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #0f3d2e;
+}
+
+/* ===== SECTIONS ===== */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* ===== MENU ===== */
+.menu-section {
+    padding: 100px 50px;
+    background: #000;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 40px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+}
+
+.price {
+    color: #c19a6b;
+    font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about-section {
+    padding: 100px 50px;
+    background: #0f3d2e;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+    padding: 100px 50px;
+    background: #000;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0f3d2e;
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0f8f6b;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 15px 20px;
+    }
+
+    .hero {
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}

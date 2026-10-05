@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verdant Coffee House</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar">
+        <div class="logo">Verdant <span>Coffee</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Experience The Art of Premium Coffee</h1>
+            <p>Crafted with passion. Brewed to perfection.</p>
+            <a href="#menu" class="cta-btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title slide-up">Our Signature Menu</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item fade-in">
+                <img src="espresso.png" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold single shot espresso.</p>
+                <span class="price">$3.50</span>
+            </div>
+
+            <div class="menu-item fade-in">
+                <img src="latte.png" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth espresso blended with steamed milk.</p>
+                <span class="price">$4.20</span>
+            </div>
+
+            <div class="menu-item fade-in">
+                <img src="capuccino.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Perfect balance of espresso, milk & foam.</p>
+                <span class="price">$4.50</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="about-container slide-up">
+            <h2>About Us</h2>
+            <p>
+                Verdant Coffee House didirikan dengan visi untuk menciptakan ruang di mana aroma kopi terbaik bertemu dengan desain modern. 
+                Kami percaya bahwa setiap cangkir kopi adalah sebuah pengalaman — dari biji kopi pilihan, proses sangrai yang detail, 
+                hingga suasana ruang yang hangat dan elegan.
+            </p>
+            <p>
+                Dengan palet warna hijau tua yang menenangkan, sentuhan hitam yang modern, dan aksen coklat kopi yang hangat, 
+                kami menghadirkan suasana premium untuk setiap pelanggan yang datang.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / RESERVATION FORM ===== -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title fade-in">Contact & Reservation</h2>
+
+        <form class="contact-form slide-up">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="youremail@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Reservation Date</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message / Requests</label>
+                <textarea placeholder="Tell us your request"></textarea>
+            </div>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Verdant Coffee House. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
